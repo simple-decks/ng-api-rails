@@ -2,10 +2,15 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.1.0'
 gem 'rails-api'
-gem 'spring', :group => :development
 gem 'pg'
 gem 'omniauth-twitter'
 
+
+group :development do
+  gem 'spring'
+  gem 'annotate', ">=2.6.0"
+  gem 'pry-rails'
+end
 
 
 # To use ActiveModel has_secure_password
